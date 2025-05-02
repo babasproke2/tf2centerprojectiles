@@ -36,6 +36,7 @@ public void OnPluginStart()
 	CreateConVar("centerprojectiles_version", MY_VERSION, "[TF2] Center Projectiles version.", (FCVAR_NOTIFY | FCVAR_DONTRECORD));
 
 	RegConsoleCmd("sm_centerprojectiles", sm_centerprojectiles, "sm_centerprojectiles to toggle or sm_centerprojectiles [1|0] to set");
+	RegConsoleCmd("sm_center", sm_centerprojectiles, "sm_center to toggle or sm_centers [1|0] to set");
 	g_hCenterProjectiles = RegClientCookie("tf2centerprojectiles", "TF2 Center Projectiles thing", CookieAccess_Protected);
 
 	// Called every player spawn...
